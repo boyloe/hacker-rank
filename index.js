@@ -2,5 +2,19 @@
 function simpleArraySum(ar) {
    return ar.reduce((acc, currentValue) => acc + currentValue,0)
 }
-let ar = [1,2,3,4,10,11]
-console.log(simpleArraySum(ar))
+
+//09/21/2020 'Compare the Triplets'
+function compareTheTriplets(aArray, bArray){
+    let a = 0, b = 0
+    for(let i = 0; i < aArray.length; i ++){
+        if( aArray[i] < bArray[i] ) 
+        {
+            b ++
+        } 
+        else if( aArray[i] > bArray[i] ) 
+        {
+            a ++
+        }
+    }
+    return [a,b]
+}
