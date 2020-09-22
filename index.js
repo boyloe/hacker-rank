@@ -43,7 +43,6 @@ function plusMinus(arr) {
     let posCount = 0, 
         negCount = 0, 
         zeroCount = 0
-    
 
     arr.forEach(number => 
         {
@@ -64,4 +63,3 @@ function plusMinus(arr) {
     console.log((zeroCount/length).toFixed(6))
 }
 
-plusMinus(arr)
