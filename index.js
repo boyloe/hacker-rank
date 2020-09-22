@@ -24,7 +24,7 @@ function veryLargeSum(ar) {
     return ar.reduce((acc, currentValue) => acc + currentValue,0)
 }
 
-09//22/2020 'Diagonal Difference'
+//09/22/2020 'Diagonal Difference'
 function diagonalDifference(array) {
     let diag1 = 0
     let diag2 = 0
@@ -35,4 +35,33 @@ function diagonalDifference(array) {
     }
     return Math.abs( diag1 - diag2 )
 }
+//09/22/2020 'Plus Minus'
+let arr = [-4, 3, -9, 0, 4, 1]
 
+function plusMinus(arr) {
+    let length = arr.length
+    let posCount = 0, 
+        negCount = 0, 
+        zeroCount = 0
+    
+
+    arr.forEach(number => 
+        {
+        if (number > 0) {
+            posCount ++
+        }
+        else if (number < 0) 
+        {
+            negCount ++
+        }
+        else
+        {
+            zeroCount ++
+        }
+    })
+    console.log((posCount/length).toFixed(6))
+    console.log((negCount/length).toFixed(6))
+    console.log((zeroCount/length).toFixed(6))
+}
+
+plusMinus(arr)
