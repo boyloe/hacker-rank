@@ -63,3 +63,12 @@ function plusMinus(arr) {
     console.log((zeroCount/length).toFixed(6))
 }
 
+//09-23-2020 'Staircase'
+const staircase = (n) => {
+    const space = ' '
+    const step = '#'
+    for (let i = 1; i <= n; i++) {
+        console.log(`${space.repeat(n-i)}${step.repeat(i)}`)
+        
+    }
+}
