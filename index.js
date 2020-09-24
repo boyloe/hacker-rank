@@ -84,5 +84,12 @@ const MiniMaxSum = (arr) => {
     const maxSum = maximumArr.reduce((acc, num) => acc + num)
     console.log(minSum, maxSum)
 }
-arr = [2,3,5,4,1]
-MiniMaxSum(arr)
+
+//09-24-2020 'Operators-30 days of Code'
+function solve(meal_cost, tip_percent, tax_percent) {
+    const tip = meal_cost * (tip_percent/100);
+    const tax = meal_cost * (tax_percent/100);    
+    const totalCost = (meal_cost + tip + tax).toFixed(0);
+    console.log(totalCost)
+
+}
