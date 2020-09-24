@@ -72,3 +72,27 @@ const staircase = (n) => {
         
     }
 }
+
+//9-24-2020 'MinMax Sum'
+const MiniMaxSum = (arr) => {
+    const minimum = arr.sort()
+        for(let i; i < 4; i++){
+            let minSum = 0
+            minSum += minimum[i] 
+            console.log(minSum)           
+        }
+        
+    
+
+    const maximum = arr.reverse()
+        for(let i; i < 4; i++){
+            let maxSum = 0
+            maxSum += maximum[i] 
+            console.log(maxSum)           
+        }        
+    
+
+    console.log(`${minimum} ${maximum}`)
+}
+
+MiniMaxSum([1,2,3,4,5])
