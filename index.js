@@ -105,3 +105,10 @@ function birthdayCakeCandles(candles) {
     })
     return candlesBlownOut
 }
+
+function timeConversion(s) {
+    s.split('AM'||'PM')
+    console.log()
+}
+time1 = '12:01:00PM'
+time2 = '12:01:00AM'
