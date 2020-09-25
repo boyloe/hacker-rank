@@ -93,4 +93,15 @@ function solve(meal_cost, tip_percent, tax_percent) {
     console.log(totalCost)
 
 }
-
+//9-25-2020 'Birthday Cake Candles'
+function birthdayCakeCandles(candles) {
+    const candlesHighestToLowest = candles.sort((a,b) => b-a)
+    let candlesBlownOut = 0
+    const highestCandle = candlesHighestToLowest[0]
+    candlesHighestToLowest.map(candle => {
+        if(candle === highestCandle){
+            candlesBlownOut++
+        }        
+    })
+    return candlesBlownOut
+}
