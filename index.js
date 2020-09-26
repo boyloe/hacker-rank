@@ -106,9 +106,28 @@ function birthdayCakeCandles(candles) {
     return candlesBlownOut
 }
 
-function timeConversion(s) {
-    s.split('AM'||'PM')
-    console.log()
+function timeConversion(timeStr) {
+    if (timeStr.includes('AM')) {
+       const time = timeStr.split('AM')[0]
+       return time
+    } else if (timeStr.includes('PM') && timeStr.split(':')[0] === '12'){
+        let timeArr = timeStr.split('PM')[0].split(':')
+        timeArr[0] = '00'
+        const time = timeArr.join(':')
+        return time
+        
+    } else {
+        let timeArr = timeStr.split('PM')[0].split(':')
+        timeArr[0] = String(parseInt(timeArr[0]) + 12)
+        console.log(timeArr[0])
+        const time = timeArr.join(':')
+        return time
+    }
 }
 time1 = '12:01:00PM'
 time2 = '12:01:00AM'
+time3 = '03:15:00PM'
+
+timeConversion(time1)
+timeConversion(time2)
+timeConversion(time3)
