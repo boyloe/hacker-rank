@@ -128,3 +128,22 @@ function timeConversion(timeStr) {
         return time
     }
 }
+
+const gradingStudents = (grades) => {
+    let roundedGrades = []
+    
+    for(let i = 0; i< grades.length; i++){
+        if (grades[i] < 38){
+            console.log(grades[i])
+            roundedGrades.push(grades[i])
+        } else if (((Math.ceil(grades[i]/5)*5) - grades[i]) >= 3) {            
+            roundedGrades.push(grades[i])
+        } else {
+            roundedGrades.push(Math.ceil(grades[i]/5)*5)
+        }
+    }
+    console.log(roundedGrades)
+    return roundedGrades        
+}
+grades = [73,67,38,33]
+gradingStudents(grades)
