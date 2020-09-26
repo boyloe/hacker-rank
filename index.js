@@ -134,7 +134,6 @@ const gradingStudents = (grades) => {
     
     for(let i = 0; i< grades.length; i++){
         if (grades[i] < 38){
-            console.log(grades[i])
             roundedGrades.push(grades[i])
         } else if (((Math.ceil(grades[i]/5)*5) - grades[i]) >= 3) {            
             roundedGrades.push(grades[i])
@@ -142,8 +141,5 @@ const gradingStudents = (grades) => {
             roundedGrades.push(Math.ceil(grades[i]/5)*5)
         }
     }
-    console.log(roundedGrades)
     return roundedGrades        
 }
-grades = [73,67,38,33]
-gradingStudents(grades)
