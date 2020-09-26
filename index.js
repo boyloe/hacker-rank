@@ -111,37 +111,20 @@ function timeConversion(timeStr) {
         let timeArr = timeStr.split('AM')[0].split(':')
         timeArr[0] = '00'
         const time = timeArr.join(':')
-        console.log(time)
         return time
 
     } else if (timeStr.includes('AM') && timeStr.split(':')[0] !== '12') {
         const time = timeStr.split('AM')[0]
-        console.log(time)
         return time
 
     } else if (timeStr.includes('PM') && timeStr.split(':')[0] === '12'){
         const time = timeStr.split('PM')[0]
-        console.log(time)
         return time
-    // } else if {
 
-    //     // let timeArr = timeStr.split('PM')[0].split(':')
-    //     // timeArr[0] = '00'
-    //     // const time = timeArr.join(':')
-    //     // return time
     }  else {
         let timeArr = timeStr.split('PM')[0].split(':')
         timeArr[0] = String(parseInt(timeArr[0]) + 12)
         const time = timeArr.join(':')
-        console.log(time)
         return time
     }
 }
-time1 = '12:01:00PM'
-time2 = '12:01:00AM'
-time3 = '03:15:00PM'
-time4 = '04:59:59AM'
-
-timeConversion(time1)
-timeConversion(time2)
-timeConversion(time4)
