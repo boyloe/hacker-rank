@@ -119,8 +119,8 @@ function timeConversion(timeStr) {
     } else {
         let timeArr = timeStr.split('PM')[0].split(':')
         timeArr[0] = String(parseInt(timeArr[0]) + 12)
-        console.log(timeArr[0])
         const time = timeArr.join(':')
+        console.log(time)
         return time
     }
 }
