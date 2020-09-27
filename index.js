@@ -105,7 +105,7 @@ function birthdayCakeCandles(candles) {
     })
     return candlesBlownOut
 }
-
+//9-26-2020 'Time Conversion'
 function timeConversion(timeStr) {
     if (timeStr.includes('AM') && timeStr.split(':')[0] === '12') {
         let timeArr = timeStr.split('AM')[0].split(':')
@@ -128,10 +128,9 @@ function timeConversion(timeStr) {
         return time
     }
 }
-
+//9-26-2020 'Grading Students'
 const gradingStudents = (grades) => {
-    let roundedGrades = []
-    
+    let roundedGrades = []    
     for(let i = 0; i< grades.length; i++){
         if (grades[i] < 38){
             roundedGrades.push(grades[i])
@@ -143,3 +142,5 @@ const gradingStudents = (grades) => {
     }
     return roundedGrades        
 }
+
+
