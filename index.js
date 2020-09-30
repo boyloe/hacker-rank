@@ -144,8 +144,10 @@ const gradingStudents = (grades) => {
 }
 
 //9-27-2020 'Let's Review'
-const letsReview = () => {
-    //this is a comment
+const letsReview = (string) => {
+    for (let i = 0; i < string.length;i++){
+        
+    }
 }
 
 
