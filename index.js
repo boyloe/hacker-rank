@@ -143,11 +143,18 @@ const gradingStudents = (grades) => {
     return roundedGrades        
 }
 
-//9-27-2020 'Let's Review'
+//9-30-2020 'Let's Review'
 const letsReview = (string) => {
+    const evenLettersArr = [];
+    const oddLettersArr = [];
     for (let i = 0; i < string.length;i++){
-        
+        if (i % 2 === 0){
+            evenLettersArr.push(string[i])
+        } else {
+            oddLettersArr.push(string[i])
+        }
     }
+    return evenLettersArr.join('') + ' ' + oddLettersArr.join('')
 }
 
-
+//10-01-2020 'Apples and Oranges'
