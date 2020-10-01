@@ -159,12 +159,8 @@ const letsReview = (string) => {
 
 //10-01-2020 'Apples and Oranges'
 function countApplesAndOranges(s, t, a, b, apples, oranges) {
-    let houseSize = [] 
     let applesOnHouse = 0
     let orangesOnHouse = 0
-    for(let i = s; i <= t;i++) {
-        houseSize.push(i)
-    }
     apples.forEach(apple => {
         let applePos = apple + a 
         if (applePos >= s && applePos <= t) {
