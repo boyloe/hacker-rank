@@ -179,5 +179,23 @@ function countApplesAndOranges(s, t, a, b, apples, oranges) {
 }
 
 //10-02-2020 'Line Jumps'
+const kangaroo = (x1,v1,x2,v2) => {
+    let response
+    if (x2 > x1 && v2 > v1) {
+        return 'NO'
+    } else {
+        for(let i=1;i<5000;i++) {
+            console.log(x1 + v1*i, x2 + v2*i)
+            if(x1 + v1*i == x2 + v2*i){
+                
+                return 'YES'
+            } else {
+                response = 'NO'
+            }
+        }
+        return response
+    }
+}
+
 
 
