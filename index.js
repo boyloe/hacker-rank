@@ -204,5 +204,5 @@ const twoDimensionalArrays = (array,array2) =>  {
 }
 
 
-
+console.log(Object.getOwnPropertyNames(Math))
 
