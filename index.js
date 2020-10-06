@@ -198,11 +198,6 @@ const kangaroo = (x1,v1,x2,v2) => {
 }
 
 
-//103-3-2020 '2D Arrays'
-const twoDimensionalArrays = (array,array2) =>  {
-    let 
-}
+//10-06-2020 'Between Two Sets'
 
-
-console.log(Object.getOwnPropertyNames(Math))
 
