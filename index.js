@@ -1,6 +1,11 @@
+//Sequence generator function for arrays
+function range(start, stop, step){
+    return  Array.from({ length: (stop - start) / step + 1}, (_, i) => start + (i * step));
+} 
+
 //09/21/2020 'Simple Array Sum'
 function simpleArraySum(ar) {
-   return ar.reduce((acc, currentValue) => acc + currentValue,0)
+    return ar.reduce((acc, currentValue) => acc + currentValue,0)
 }
 
 //09/21/2020 'Compare the Triplets'
@@ -199,5 +204,13 @@ const kangaroo = (x1,v1,x2,v2) => {
 
 
 //10-06-2020 'Between Two Sets'
-
-
+const betweenTwoSets = (arrA, arrB) => {
+    let factorArr = [...arrA, ...arrB]
+    lengthA = arrA.length
+    let betweenArr = range(arrA[lengthA-1], arrB[0],1)
+    for (let i=0;i < betweenArr.length;i++) {
+    }
+} 
+const arrA = [2,4]
+const arrB = [16,32,96]
+betweenTwoSets(arrA,arrB)
