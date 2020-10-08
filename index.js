@@ -218,5 +218,6 @@ const breakingRecords = (scoreArr) => {
             lowRecordBrokenCount++
         }
     })
-    console.log(`${highRecordBrokenCount} ${lowRecordBrokenCount}`)
+   let brokenRecords = [highRecordBrokenCount, lowRecordBrokenCount] 
+   return brokenRecords 
 }
