@@ -203,3 +203,20 @@ const kangaroo = (x1,v1,x2,v2) => {
 }
 
 //10-08-2020 'Breaking the Records'
+const breakingRecords = (scoreArr) => {
+    let highRecordBrokenCount = 0,
+        lowRecordBrokenCount = 0,
+        highRecord = scoreArr[0],
+        lowRecord = scoreArr[0]
+
+    scoreArr.forEach(score => {
+        if (score > highRecord) {
+            highRecordBrokenCount++
+            highRecord = score
+        } else if (score < lowRecord) {
+            lowRecord = score
+            lowRecordBrokenCount++
+        }
+    })
+    console.log(`${highRecordBrokenCount} ${lowRecordBrokenCount}`)
+}
