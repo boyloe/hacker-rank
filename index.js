@@ -221,3 +221,18 @@ const breakingRecords = (scoreArr) => {
    let brokenRecords = [highRecordBrokenCount, lowRecordBrokenCount] 
    return brokenRecords 
 }
+
+//10-09-2020 'Sub-array Division'
+const birthday = (squares,day,month) => {
+    let shareCount = 0
+    for (let i = 0;i < length - 1;i++) {
+        
+    }
+
+}
+
+let squares = [1,2,1,3,2],
+    day = 3,
+    month = 2
+
+console.log(birthday(squares,day,month))    
