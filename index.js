@@ -233,6 +233,6 @@ const birthday = (squares,day,month) => {
 
 let squares = [1,2,1,3,2],
     day = 3,
-    month = 2
+    month = 4
 
 console.log(birthday(squares,day,month))    
