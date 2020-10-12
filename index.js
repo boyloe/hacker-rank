@@ -222,17 +222,8 @@ const breakingRecords = (scoreArr) => {
    return brokenRecords 
 }
 
-//10-09-2020 'Sub-array Division'
-const birthday = (squares,day,month) => {
-    let shareCount = 0
-    for (let i = 0;i < length - 1;i++) {
-        
+function highestRank(arr){
+    //Your Code logic should written here
     }
 
-}
-
-let squares = [1,2,1,3,2],
-    day = 3,
-    month = 4
-
-console.log(birthday(squares,day,month))    
+var arr = [12, 10, 8, 12, 7, 6, 4, 10, 12];
