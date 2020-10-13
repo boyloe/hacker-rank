@@ -223,7 +223,6 @@ const breakingRecords = (scoreArr) => {
 }
 
 function highestRank(arr){
-    //Your Code logic should written here
     }
 
 var arr = [12, 11, 8, 12, 7, 6, 4, 10, 12];
