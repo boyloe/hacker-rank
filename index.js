@@ -149,14 +149,14 @@ const gradingStudents = (grades) => {
 }
 
 //9-30-2020 'Let's Review'
-const letsReview = (string) => {
+const letsReview = (input) => {
     const evenLettersArr = [];
     const oddLettersArr = [];
-    for (let i = 0; i < string.length;i++){
+    for (let i = 0; i < input.length;i++){
         if (i % 2 === 0){
-            evenLettersArr.push(string[i])
+            evenLettersArr.push(input[i])
         } else {
-            oddLettersArr.push(string[i])
+            oddLettersArr.push(input[i])
         }
     }
     return evenLettersArr.join('') + ' ' + oddLettersArr.join('')
@@ -222,7 +222,7 @@ const breakingRecords = (scoreArr) => {
    return brokenRecords 
 }
 
-function highestRank(arr){
-    }
-
-var arr = [12, 11, 8, 12, 7, 6, 4, 10, 12];
+//10-16-2020 'Array Reverse'
+const reverseArr = (arr) => {
+    console.log(arr.reverse().join(' '))
+}
