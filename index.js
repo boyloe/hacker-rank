@@ -218,11 +218,16 @@ const breakingRecords = (scoreArr) => {
             lowRecordBrokenCount++
         }
     })
-   let brokenRecords = [highRecordBrokenCount, lowRecordBrokenCount] 
-   return brokenRecords 
+    let brokenRecords = [highRecordBrokenCount, lowRecordBrokenCount] 
+    return brokenRecords 
 }
 
 //10-16-2020 'Array Reverse'
 const reverseArr = (arr) => {
     console.log(arr.reverse().join(' '))
+}
+
+//10-19-2020 'Migratory Birds'
+const migratoryBirds = arr => {
+    
 }
