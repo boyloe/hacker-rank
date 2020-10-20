@@ -229,5 +229,19 @@ const reverseArr = (arr) => {
 
 //10-19-2020 'Migratory Birds'
 const migratoryBirds = arr => {
-    
+    let birdHash = {
+        1:0,
+        2:0,
+        3:0,
+        4:0,
+        5:0
+    }
+
+    arr.forEach
+}
+
+//10-20-2020 'Left Shift arr'
+
+const leftShift = (arr,numberOfShifts) => {
+    return [...arr.splice(numberOfShifts), ...arr.splice(0,numberOfShifts)]
 }
