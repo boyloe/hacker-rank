@@ -247,9 +247,9 @@ const leftShift = (arr,numberOfShifts) => {
 }
 
 //10-24-2020 '2D Arrays-DS'
-const hourglass = (arr) => {
-    let largestHourglassSum
-    let currentHourglassSum
+const hourglassSum = (arr) => {
+    let sum = []
+    
     for (let i = 0; i < arr.length - 2; i++) {
         for (let j = 0; j < arr.length - 2;j++) {
             let pos1 = arr[i][j]
@@ -259,20 +259,17 @@ const hourglass = (arr) => {
             let pos5 = arr[i+2][j]
             let pos6 = arr[i+2][j+1]
             let pos7 = arr[i+2][j+2]
-            currentHourglassSum  = pos1 + pos2 + pos3 + pos4 + pos5 + pos6 + pos7; 
-            if(currentHourglassSum > largestHourglassSum || !largestHourglassSum){
-                largestHourglassSum = currentHourglassSum
-            }
+            sum.push(pos1 + pos2 + pos3 + pos4 + pos5 + pos6 + pos7); 
         }
     }
-    return largestHourglassSum
+    return Math.max(...sum)
 }
 const testArr = [
-                [1,1,1,0,0,0],
-                [0,1,0,0,0,0],
-                [1,1,1,0,0,0],
-                [0,0,2,4,4,0],
-                [0,0,0,2,0,0],
-                [0,0,1,2,4,0],
+                [-1,1,-1,0,0,0],
+                [0,-1,0,0,0,0],
+                [-1,-1,-1,0,0,0],
+                [0,-9,2,-4,-4,0],
+                [-7,0,0,-2,0,0],
+                [0,0,-1,-2,-4,0],
             ]
-console.log(hourglass(testArr))
+console.log(hourglassSum(testArr))
