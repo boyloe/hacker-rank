@@ -245,3 +245,8 @@ const migratoryBirds = arr => {
 const leftShift = (arr,numberOfShifts) => {
     return [...arr.splice(numberOfShifts), ...arr.splice(0,numberOfShifts)]
 }
+
+//10-24-2020 '2D Arrays-DS'
+const hourglass = () => {
+    
+}
