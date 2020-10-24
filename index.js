@@ -260,7 +260,7 @@ const hourglass = (arr) => {
             let pos6 = arr[i+2][j+1]
             let pos7 = arr[i+2][j+2]
             currentHourglassSum  = pos1 + pos2 + pos3 + pos4 + pos5 + pos6 + pos7; 
-            if(currentHourglassSum > largestHourglassSum || ){
+            if(currentHourglassSum > largestHourglassSum || !largestHourglassSum){
                 largestHourglassSum = currentHourglassSum
             }
         }
