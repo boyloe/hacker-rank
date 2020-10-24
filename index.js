@@ -247,6 +247,14 @@ const leftShift = (arr,numberOfShifts) => {
 }
 
 //10-24-2020 '2D Arrays-DS'
-const hourglass = () => {
-    
+const hourglass = (arr) => {
+
 }
+const arr = [
+                [1,1,1,0,0,0],
+                [0,1,0,0,0,0],
+                [1,1,1,0,0,0],
+                [0,0,2,4,4,0],
+                [0,0,0,2,0,0],
+                [0,0,1,2,4,0],
+            ]
