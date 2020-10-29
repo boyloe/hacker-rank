@@ -266,5 +266,20 @@ const hourglassSum = (arr) => {
 }
 
 //10-26-2020 'New Years Chaos'
-const newYearsChaos
+const minimumBribes = (arr) => {
+    let numberOfBribes = 0
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > (i+3)) {
+            return 'Too Chaotic'
+        } else if (arr[i] > i+1) {
+            numberOfBribes += arr[i] - i - 1 
+        }
+    }
+    return numberOfBribes
+}
+
+const arr1 = [2,1,5,3,4];
+const arr2 = [2,5,1,3,4];
+
+console.log(minimumBribes(arr1))
 
