@@ -269,17 +269,16 @@ const hourglassSum = (arr) => {
 const minimumBribes = (arr) => {
     let numberOfBribes = 0
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i] > (i+3)) {
-            return 'Too Chaotic'
-        } else if (arr[i] > i+1) {
+        if (arr[i] - (i+1) > 2) {
+            return 'Too chaotic'
+        } else if (arr[i] >= i+1) {
             numberOfBribes += arr[i] - i - 1 
         }
     }
     return numberOfBribes
 }
 
-const arr1 = [2,1,5,3,4];
-const arr2 = [2,5,1,3,4];
+const arr1 = [1,2,5,3,7,8,6,4]; //should be 7
 
 console.log(minimumBribes(arr1))
 
