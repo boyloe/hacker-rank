@@ -265,7 +265,7 @@ const hourglassSum = (arr) => {
     return Math.max(...sum)
 }
 
-//11-17-2020 'Bubble Sort'
+//11-17-2020 'Bubble Sort' (Sorting Problem)
 function countSwaps(array) {
     let swaps = 0
     for (let i = 0; i < array.length; i++) {
@@ -284,3 +284,7 @@ function countSwaps(array) {
     console.log(`Last Element: ${array[array.length-1]}`)
 }
 
+//11-17-2020 'Mark and Toys' (Sorting Problem)
+function maximumToys(prices, k) {
+    
+}
