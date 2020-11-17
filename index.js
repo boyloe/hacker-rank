@@ -284,4 +284,3 @@ function countSwaps(array) {
     console.log(`Last Element: ${array[array.length-1]}`)
 }
 
-countSwaps([3,2,1])
