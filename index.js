@@ -287,7 +287,15 @@ function countSwaps(array) {
 //11-17-2020 'Mark and Toys' (Sorting Problem)
 function maximumToys(prices, budget) {
     const sortedToyPrices = prices.sort((a,b) => a - b)
-    console.log(sortedToyPrices)
-    
+    let moneyLeft = budget 
+    let toysPurchased = 0
+    sortedToyPrices.forEach(toyPrice => {
+        if (moneyLeft >= toyPrice) {
+            moneyLeft -= toyPrice
+            toysPurchased++
+        }
+    })
+    return toysPurchased
 }
 const prices = [1,12,5,111,200,1000,10]
+console.log(maximumToys(prices,50))
