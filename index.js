@@ -265,4 +265,23 @@ const hourglassSum = (arr) => {
     return Math.max(...sum)
 }
 
+//11-17-2020 'Bubble Sort'
+function countSwaps(array) {
+    let swaps = 0
+    for (let i = 0; i < array.length; i++) {
+        for (let j = 0; j < array.length - 1; j++){
+            let a = array[j]
+            let b = array[j + 1]
+            console.log(a)
+            if (a > b) {
+                [array[j],array[j+1]] = [b,a]
+                swaps++
+            }
+        }
+    }
+    console.log(`Array is sorted in ${swaps} swaps.`) 
+    console.log(`First Element: ${array[0]}`)
+    console.log(`Last Element: ${array[array.length-1]}`)
+}
 
+countSwaps([3,2,1])
