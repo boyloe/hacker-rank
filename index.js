@@ -297,3 +297,8 @@ function maximumToys(prices, budget) {
     })
     return toysPurchased
 }
+
+const sockMerchant = (n, arr) => {
+    let count = 0 
+    constSockMap = new Map
+}
