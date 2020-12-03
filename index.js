@@ -309,7 +309,9 @@ const sockMerchant = (n, arr) => {
             arrMap[number]++
         }
     })
-    console.log(arrMap)
+    const valuesArr = Object.values(arrMap)
+    const pairsSold = valuesArr.map(numberSocks => Math.floor(numberSocks/2))
+    console.log(pairsSold)
 }
 const testArr = [10, 20, 20, 10, 10, 30, 50, 10, 20]
 const n = arr.length
