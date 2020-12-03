@@ -313,6 +313,3 @@ const sockMerchant = (n, arr) => {
     const pairsSold = pairs.reduce((acc, curr) => acc + curr)
     return pairsSold
 }
-const testArr = [10, 20, 20, 10, 10, 30, 50, 10, 20]
-const n = arr.length
-console.log(sockMerchant(n, testArr))
