@@ -300,5 +300,17 @@ function maximumToys(prices, budget) {
 
 const sockMerchant = (n, arr) => {
     let count = 0 
-    constSockMap = new Map
+    const arrMap = {}
+    // const sortedArr = arr.sort((a,b) => a - b)
+    arr.forEach(number => {
+        if (!arrMap[number]) {
+            arrMap[number] = 1 
+        } else {
+            arrMap[number]++
+        }
+    })
+    console.log(arrMap)
 }
+const testArr = [10, 20, 20, 10, 10, 30, 50, 10, 20]
+const n = arr.length
+console.log(sockMerchant(n, testArr))
