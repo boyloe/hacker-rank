@@ -299,7 +299,6 @@ function maximumToys(prices, budget) {
 }
 
 const sockMerchant = (n, arr) => {
-    let count = 0 
     const arrMap = {}
     // const sortedArr = arr.sort((a,b) => a - b)
     arr.forEach(number => {
@@ -310,8 +309,9 @@ const sockMerchant = (n, arr) => {
         }
     })
     const valuesArr = Object.values(arrMap)
-    const pairsSold = valuesArr.map(numberSocks => Math.floor(numberSocks/2))
-    console.log(pairsSold)
+    const pairs = valuesArr.map(numberSocks => Math.floor(numberSocks/2))
+    const pairsSold = pairs.reduce((acc, curr) => acc + curr)
+    return pairsSold
 }
 const testArr = [10, 20, 20, 10, 10, 30, 50, 10, 20]
 const n = arr.length
