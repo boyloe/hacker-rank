@@ -313,3 +313,21 @@ const sockMerchant = (n, arr) => {
     const pairsSold = pairs.reduce((acc, curr) => acc + curr)
     return pairsSold
 }
+
+const countingValleys = (steps, path) {
+    let currentLevel = 0
+    let numValleys = 0
+    const pathArray = path.split('')
+    pathArray.forEach(step => {
+        if (step === 'U' && currentLevel === -1) {
+            currentLevel++
+            numValleys++
+        } else if (step === 'U') {
+            currentLevel++
+        } else {
+            currentLevel--
+        }
+    })
+    return numValleys
+}
+
