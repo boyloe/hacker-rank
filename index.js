@@ -330,5 +330,4 @@ const countingValleys = (steps, path) => {
     })
     return numValleys
 }
-console.log('test1', countingValleys(8, 'UDDDUDUU'))
-console.log('test2', countingValleys(12, 'DDUUDDUDUUUD'))
+
