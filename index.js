@@ -314,7 +314,7 @@ const sockMerchant = (n, arr) => {
     return pairsSold
 }
 
-const countingValleys = (steps, path) {
+const countingValleys = (steps, path) => {
     let currentLevel = 0
     let numValleys = 0
     const pathArray = path.split('')
@@ -330,4 +330,5 @@ const countingValleys = (steps, path) {
     })
     return numValleys
 }
-
+console.log('test1', countingValleys(8, 'UDDDUDUU'))
+console.log('test2', countingValleys(12, 'DDUUDDUDUUUD'))
