@@ -332,7 +332,22 @@ const countingValleys = (steps, path) => {
 }
 
 const jumpingOnClouds = (clouds) => {
-    return 'fuck'
+    let moveCount = 0 
+    let position = 0
+    while (position < clouds.length) {
+        if (position + 2 === 0) {
+            moveCount++
+            position+= 2
+            console.log({moveCount})
+            console.log({position})
+        } else {
+            moveCount++
+            position++
+            console.log({moveCount})
+            console.log({position})
+        }
+        
+    }
 }
 
 const cloudTest1 = [ 0, 0, 1, 0, 0, 1, 0 ] //return 4
