@@ -331,3 +331,13 @@ const countingValleys = (steps, path) => {
     return numValleys
 }
 
+const jumpingOnClouds = (clouds) => {
+    return 'fuck'
+}
+
+const cloudTest1 = [ 0, 0, 1, 0, 0, 1, 0 ] //return 4
+const cloudTest2 = [ 0, 0, 0, 1, 0, 0 ] //return 3
+
+console.log('test 1',jumpingOnClouds(cloudTest1))
+console.log('test 2',jumpingOnClouds(cloudTest2))
+
