@@ -347,6 +347,12 @@ const jumpingOnClouds = (clouds) => {
 }
 
 const repeatedString = (string, n) => {
-    
+    const numberOfStringRepeats = Math.ceil(n/string.length)
+    repeatedStringArray = string.repeat(numberOfStringRepeats).split('')
+    console.log(repeatedStringArray)
 }
+
+const testString1 = 'aba'
+const n1 = 10
+repeatedString(testString1, n1)
 
