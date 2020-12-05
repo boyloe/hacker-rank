@@ -347,13 +347,18 @@ const jumpingOnClouds = (clouds) => {
 }
 
 const repeatedString = (string, n) => {
-    const numberOfStringRepeats = Math.ceil(n/string.length)
-    repeatedStringArray = string.repeat(numberOfStringRepeats).split('')
-    slicedStringArray = repeatedStringArray.slice(0,n)
-    slicedStringArray.filter(letter => letter === 'a')
-}
+    let c = 0,
+        ca = 0,
+        r = n % s.length
 
-const testString1 = 'aba'
-const n1 = 10
-repeatedString(testString1, n1)
+    for (let i = s.length; i-- > 0;) {
+        if (s.charAt(i) == 'a') {
+        ++c
+
+        if (i < r)
+            ++ca
+        }
+    }
+    return ((n - r) / s.length * c) + ca
+}
 
