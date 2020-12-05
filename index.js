@@ -346,3 +346,7 @@ const jumpingOnClouds = (clouds) => {
     return moveCount
 }
 
+const repeatedString = (string, n) => {
+    
+}
+
