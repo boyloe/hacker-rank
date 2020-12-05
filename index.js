@@ -338,21 +338,11 @@ const jumpingOnClouds = (clouds) => {
         if (clouds[position + 2] === 0) {
             moveCount++
             position+= 2
-            console.log({moveCount})
-            console.log({position})
         } else {
             moveCount++
             position++
-            console.log({moveCount})
-            console.log({position})
         }        
     }
     return moveCount
 }
-
-const cloudTest1 = [ 0, 0, 1, 0, 0, 1, 0 ] //return 4
-const cloudTest2 = [ 0, 0, 0, 1, 0, 0 ] //return 3
-
-console.log('test 1',jumpingOnClouds(cloudTest1))
-console.log('test 2',jumpingOnClouds(cloudTest2))
 
