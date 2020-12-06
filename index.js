@@ -349,16 +349,16 @@ const jumpingOnClouds = (clouds) => {
 const repeatedString = (string, n) => {
     let c = 0,
         ca = 0,
-        r = n % s.length
+        r = n % string.length
 
-    for (let i = s.length; i-- > 0;) {
-        if (s.charAt(i) == 'a') {
+    for (let i = string.length; i-- > 0;) {
+        if (string.charAt(i) == 'a') {
         ++c
 
         if (i < r)
             ++ca
         }
     }
-    return ((n - r) / s.length * c) + ca
+    return ((n - r) / string.length * c) + ca
 }
 
