@@ -380,13 +380,3 @@ const checkMagazine = (magazine, note) => {
     console.log(replicable ? 'Yes' : 'No');
 }
 
-const magazine1 = ['ive', 'got', 'a', 'lovely', 'bunch', 'of', 'coconuts']
-const note1 = ['ive', 'got', 'some', 'coconuts']
-
-const magazine2 = ['give', 'me', 'one', 'grand', 'today', 'night']
-const note2 = ['give', 'one', 'grand', 'today']
-
-const magazine3 = ['h', 'ghq', 'g', 'xxy', 'wdnr', 'anjst', 'xxy', 'wdnr', 'h', 'h', 'anjst', 'wdnr' ]
-const note3 = [ 'h', 'ghq' ]
-
-console.log(checkMagazine(magazine3, note3)) //should return Yes
