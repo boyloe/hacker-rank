@@ -365,6 +365,7 @@ const repeatedString = (string, n) => {
 const checkMagazine = (magazine, note) => {
     const magazineMap = {}
     const noteMap = {}
+    let canUseMagazine = 'Yes'
     magazine.forEach( word => {
         if (!magazineMap[word]) {
             magazineMap[word] = 1
@@ -381,10 +382,10 @@ const checkMagazine = (magazine, note) => {
     })
     note.forEach(word => {
         if (noteMap[word] !== magazineMap[word]){
-            return 'No'
+            canUseMagazine = 'No'
         }
     })
-    return 'Yes'
+    return canUseMagazine
 }
 
 const magazine1 = ['ive', 'got', 'a', 'lovely', 'bunch', 'of', 'coconuts']
@@ -393,5 +394,5 @@ const note1 = ['ive', 'got', 'some', 'coconuts']
 const magazine2 = ['give', 'me', 'one', 'grand', 'today', 'night']
 const note2 = ['give', 'one', 'grand', 'today']
 
-console.log(checkMagazine(magazine1, note1)) //should return Yes
-console.log(checkMagazine(magazine2, note2)) //should return No
+console.log(checkMagazine(magazine1, note1)) //should return No
+console.log(checkMagazine(magazine2, note2)) //should return Yes
