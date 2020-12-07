@@ -363,14 +363,35 @@ const repeatedString = (string, n) => {
 
 //12-6-2020 'Hash Tables: Ransom Note'
 const checkMagazine = (magazine, note) => {
-
+    const magazineMap = {}
+    const noteMap = {}
+    magazine.forEach( word => {
+        if (!magazineMap[word]) {
+            magazineMap[word] = 1
+        } else {
+            magazineMap[word]++
+        }
+    })
+    note.forEach( word => {
+        if (!noteMap[word]) {
+            noteMap[word] = 1
+        } else {
+            noteMap[word]++
+        }
+    })
+    note.forEach(word => {
+        if (noteMap[word] !== magazineMap[word]){
+            return 'No'
+        }
+    })
+    return 'Yes'
 }
 
-const magazine1 = 'ive got a lovely bunch of coconuts'
-const note1 = 'ive got some coconuts'
+const magazine1 = ['ive', 'got', 'a', 'lovely', 'bunch', 'of', 'coconuts']
+const note1 = ['ive', 'got', 'some', 'coconuts']
 
-const magazine2 = 'give me one grand today night'
-const note2 = 'give one grand today'
+const magazine2 = ['give', 'me', 'one', 'grand', 'today', 'night']
+const note2 = ['give', 'one', 'grand', 'today']
 
 console.log(checkMagazine(magazine1, note1)) //should return Yes
 console.log(checkMagazine(magazine2, note2)) //should return No
