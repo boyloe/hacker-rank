@@ -385,7 +385,7 @@ const checkMagazine = (magazine, note) => {
             canUseMagazine = 'No'
         }
     })
-    return canUseMagazine
+    console.log(canUseMagazine)
 }
 
 const magazine1 = ['ive', 'got', 'a', 'lovely', 'bunch', 'of', 'coconuts']
