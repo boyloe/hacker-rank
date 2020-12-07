@@ -300,7 +300,6 @@ function maximumToys(prices, budget) {
 
 const sockMerchant = (n, arr) => {
     const arrMap = {}
-    // const sortedArr = arr.sort((a,b) => a - b)
     arr.forEach(number => {
         if (!arrMap[number]) {
             arrMap[number] = 1 
@@ -362,3 +361,16 @@ const repeatedString = (string, n) => {
     return ((n - r) / string.length * c) + ca
 }
 
+//12-6-2020 'Hash Tables: Ransom Note'
+const checkMagazine = (magazine, note) => {
+
+}
+
+const magazine1 = 'ive got a lovely bunch of coconuts'
+const note1 = 'ive got some coconuts'
+
+const magazine2 = 'give me one grand today night'
+const note2 = 'give one grand today'
+
+console.log(checkMagazine(magazine1, note1)) //should return Yes
+console.log(checkMagazine(magazine2, note2)) //should return No
