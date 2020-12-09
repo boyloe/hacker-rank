@@ -383,15 +383,15 @@ const checkMagazine = (magazine, note) => {
 const arrayManipulation = (n, queries) => {
     const initialArray = new Array(n).fill(0)
     for ( let i = 0; i < queries.length; i++ ) {
-        initialArray[queries[i][0] - 1]+= queries[i][2]
-        initialArray[queries[i][1] - 1]+= queries[i][2]
-        console.log(initialArray)
-
+        for ( j = queries[i][0] - 1; j < queries[i][1]; j++ ){
+            initialArray[j]+= queries[i][2]
+            console.log(initialArray)
+        }
     }
     return Math.max(...initialArray)
 }
 
-let arrSize1 = 5
-let testQuery1 = [ [ 1, 2, 100 ], [ 2, 5, 100 ], [ 3, 4, 100 ] ]
+let arrSize1 = 10
+let testQuery1 = [ [ 1, 5, 3 ], [ 4, 8, 7 ], [ 6, 9, 1 ] ]
 
 console.log(arrayManipulation(arrSize1, testQuery1))
