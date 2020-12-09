@@ -1,3 +1,5 @@
+const { max } = require("lodash");
+
 //Sequence generator function for arrays
 function range(start, stop, step){
     return  Array.from({ length: (stop - start) / step + 1}, (_, i) => start + (i * step));
@@ -380,18 +382,46 @@ const checkMagazine = (magazine, note) => {
     console.log(replicable ? 'Yes' : 'No');
 }
 
-const arrayManipulation = (n, queries) => {
-    const initialArray = new Array(n).fill(0)
-    for ( let i = 0; i < queries.length; i++ ) {
-        for ( j = queries[i][0] - 1; j < queries[i][1]; j++ ){
-            initialArray[j]+= queries[i][2]
-            console.log(initialArray)
+function arrayManipulation(n, queries) {
+    
+    let max = 0;
+    const params = [];
+    
+    for(let q=0; q<queries.length; q++){
+        
+        const query = queries[q];
+        const qstart = query[0];
+        const qend = query[1];
+        const qval = query[2];
+        
+        params.push({
+            key: qstart,
+            val: qval
+        });
+        
+        params.push({
+            key: qend,
+            val: -qval
+        });
+    }
+    
+    //sort the parameters by key
+    params.sort((item1, item2) => {
+        if(item1.key === item2.key){
+            return item2.val - item1.val;
+        }
+            return item1.key - item2.key;
+    });
+    
+    let sum = 0;    
+    for(let i=0; i<params.length; i++){
+        const param = params[i];
+        sum += param.val;
+        
+        if(sum > max){
+            max = sum;
         }
     }
-    return Math.max(...initialArray)
+    return max;
 }
 
-let arrSize1 = 10
-let testQuery1 = [ [ 1, 5, 3 ], [ 4, 8, 7 ], [ 6, 9, 1 ] ]
-
-console.log(arrayManipulation(arrSize1, testQuery1))
