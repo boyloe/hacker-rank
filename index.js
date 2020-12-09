@@ -380,3 +380,10 @@ const checkMagazine = (magazine, note) => {
     console.log(replicable ? 'Yes' : 'No');
 }
 
+const arrayManipulation = (n, queries) => {
+    
+}
+arrSize1 = 5
+testQuery1 = [ [ 1, 2, 100 ], [ 2, 5, 100 ], [ 3, 4, 100 ] ]
+
+console.log(arrayManipulation(arrSize, testQuery1))
