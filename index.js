@@ -381,9 +381,14 @@ const checkMagazine = (magazine, note) => {
 }
 
 const arrayManipulation = (n, queries) => {
-    
-}
-arrSize1 = 5
-testQuery1 = [ [ 1, 2, 100 ], [ 2, 5, 100 ], [ 3, 4, 100 ] ]
+    const initialArray = new Array(n).fill(0)
+    for ( let i = 0; i < queries.length; i++ ) {
 
-console.log(arrayManipulation(arrSize, testQuery1))
+    }
+    return Math.max(...initialArray)
+}
+
+let arrSize1 = 5
+let testQuery1 = [ [ 1, 2, 100 ], [ 2, 5, 100 ], [ 3, 4, 100 ] ]
+
+console.log(arrayManipulation(arrSize1, testQuery1))
