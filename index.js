@@ -403,8 +403,7 @@ function arrayManipulation(n, queries) {
             key: qend,
             val: -qval
         });
-    }
-    
+    }    
     //sort the parameters by key
     params.sort((item1, item2) => {
         if(item1.key === item2.key){
@@ -423,5 +422,14 @@ function arrayManipulation(n, queries) {
         }
     }
     return max;
+}
+
+
+//12-10-2020 'Factorial'
+const factorial = (number) => {
+    const range = (start, stop, step=1) => {
+        return Array.from({ length: (stop - start) / step + 1}, (_, i) => start + (i * step));
+    }
+    return range(1, number).reduce((accumulator, current) => accumulator * current)
 }
 
