@@ -449,6 +449,3 @@ const minimumAbsoluteDifference = (array) => {
     }
     return minimumDiff
 }
-
-const testArray = [1, -3, 71, 68, 17]
-console.log(minimumAbsoluteDifference(testArray))
