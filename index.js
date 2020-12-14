@@ -435,7 +435,20 @@ const factorial = (number) => {
 
 //12-14-2020 'Minimum Absolute Difference in an Array
 const minimumAbsoluteDifference = (array) => {
-    let minimumDiffer = Math.abs(array[0] - array[1])
-    
+    const sortedArray = array.sort()
+    let minimumDiff;
+
+    for (let i = 0; i < sortedArray.length; i++) {
+        let absoluteDiff = Math.abs(sortedArray[i + 1] - sortedArray[i])
+        if (!minimumDiff || absoluteDiff < minimumDiff) {
+            minimumDiff = absoluteDiff
+        }
+        if (minimumDiff === 0 ) {
+            return minimumDiff
+        }
+    }
+    return minimumDiff
 }
 
+const testArray = [1, -3, 71, 68, 17]
+console.log(minimumAbsoluteDifference(testArray))
