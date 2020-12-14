@@ -433,3 +433,9 @@ const factorial = (number) => {
     return range(1, number).reduce((accumulator, current) => accumulator * current)
 }
 
+//12-14-2020 'Minimum Absolute Difference in an Array
+const minimumAbsoluteDifference = (array) => {
+    let minimumDiffer = Math.abs(array[0] - array[1])
+    
+}
+
