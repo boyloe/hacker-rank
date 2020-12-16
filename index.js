@@ -450,4 +450,9 @@ const minimumAbsoluteDifference = (array) => {
     return minimumDiff
 }
 
-//test commit   
+const beginsWithCapitalLetter = (input) => {
+    if (typeof input !== 'string' || input.charAt(0).match(/[0-9]/)) {
+        return false
+    }
+    return input.charAt(0) === input.charAt(0).toUpperCase()
+}
